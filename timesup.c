@@ -49,7 +49,10 @@ int main(void)
         }
         else
         {
+            // if time is greater than 12 convert to single digit time
+            // make remain = time
             remain = time;
+            // remain will now equal the time minus 12
             remain = remain - 12;
         }
         //         if time is 12 or < print the value of remain
