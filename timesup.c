@@ -18,11 +18,15 @@ int main(void)
     int x = 3;
 
     // y hours passed between 1 and int_max
-    int y = 25;
+    int y = 48;
 
     int time = x + y; // 8
 
     int days = 0;
+
+    int remain = 0;
+
+    int military = 0;
 
     // Does time equal 24 hours -- check if time = 24 = 1 day
     // If it is full day increment the days || days++
@@ -30,16 +34,29 @@ int main(void)
 
     if (time >= 24)
     {
-        days++;
-        int remain = time % 24;
+        // 24 hours in a day
+        // How many times does 24 go into the time
+
+        days = time / 24;
+        remain = time % 24;
     }
     // If time is not a full day, get the hours and turn into regular time
     else
     {
-        int military = time - 12;
+        if (time < 12)
+        {
+            remain = time;
+        }
+        else
+        {
+            remain = time;
+            remain = remain - 12;
+        }
+        //         if time is 12 or < print the value of remain
+        //         if time is > 12 print the value of remain
     }
 
-    printf("Days passed: %i\n", days);
+    printf("Days passed: %i\nCurrent Time: %i:00\n", days, remain);
 
     // Check constraints of input
 
