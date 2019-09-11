@@ -18,7 +18,7 @@ int main(void)
     int x = 3;
 
     // y hours passed between 1 and int_max
-    int y = 5;
+    int y = 25;
 
     int time = x + y; // 8
 
@@ -38,6 +38,8 @@ int main(void)
     {
         int military = time - 12;
     }
+
+    printf("Days passed: %i\n", days);
 
     // Check constraints of input
 
