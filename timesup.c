@@ -22,7 +22,7 @@ int main(void)
 
     int time = x + y; // 8
 
-    int days;
+    int days = 0;
 
     // Does time equal 24 hours -- check if time = 24 = 1 day
     // If it is full day increment the days || days++
@@ -31,6 +31,12 @@ int main(void)
     if (time >= 24)
     {
         days++;
+        int remain = time % 24;
+    }
+    // If time is not a full day, get the hours and turn into regular time
+    else
+    {
+        int military = time - 12;
     }
 
     // Check constraints of input
