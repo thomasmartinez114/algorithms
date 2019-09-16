@@ -6,11 +6,21 @@
 
 var readline = require('readline-sync');
 
-var enterMonth = readline.question('Enter a month in 00 format: ');
-console.log(enterMonth);
+// Get user input month
+var enterMonth = readline.question('Enter a month 1-12: ');
 
+// Get user input year
+var enterYear = readline.question('Enter a year - xxxx format: '); // Constraint to 4 digit entry
+
+// Populate current month and year
 var currentYear = new Date().getFullYear();
 var currentMonth = new Date().getMonth() + 1;
 
-console.log(`${currentMonth} & ${currentYear}`);
-console.log(enterMonth);
+// Summing up the months years
+var totalMonths = enterMonth / 12;
+var totalYears = currentYear - enterYear;
+let combinedTime = totalYears + totalMonths;
+
+// console.log(`${currentMonth} & ${currentYear}`);
+// console.log(enterMonth);
+console.log(`The total amount of time passed it: ${combinedTime}`);
