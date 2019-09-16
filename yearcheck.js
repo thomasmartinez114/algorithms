@@ -18,9 +18,10 @@ var currentMonth = new Date().getMonth() + 1;
 
 // Summing up the months years
 var totalMonths = enterMonth / 12;
+var totalMonthsTwo = totalMonths.toFixed(2);
 var totalYears = currentYear - enterYear;
 let combinedTime = totalYears + totalMonths;
 
 // console.log(`${currentMonth} & ${currentYear}`);
 // console.log(enterMonth);
-console.log(`The total amount of time passed it: ${combinedTime}`);
+console.log(`The total amount of time passed it: ${combinedTime.toFixed(2)}`);
