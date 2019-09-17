@@ -13,6 +13,11 @@ int main(void)
 
     int currYear = 2019;
 
+    // if statement
+    // if currMonth > pastMonth {
+    // do currMonth - pastMonth
+    //}
+
     int totalMonths = (currMonth - pastMonth) / 12;
 
     printf("%i\n", totalMonths);
