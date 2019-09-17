@@ -12,4 +12,18 @@ int main(void)
     int pastYear = 1992;
 
     int currYear = 2019;
+
+    int totalMonths = (currMonth - pastMonth) / 12;
+
+    printf("%i\n", totalMonths);
 }
+
+// int main(void)
+// {
+//     // Iteratively double i
+//     for (int i = 1; ; i *= 2)
+//     {
+//         printf("%i\n", i);
+//         sleep(1);
+//     }
+// }
