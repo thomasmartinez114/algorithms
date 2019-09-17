@@ -22,9 +22,15 @@ int main(void)
     // do currMonth - pastMonth
     //}
 
+    // implement Do While loop instead?
+
     if (pastMonth < currMonth)
     {
         totalMonths = currMonth - pastMonth;
+    }
+    else
+    {
+        totalMonths = pastMonth - currMonth;
     }
 
     printf("Months passed: %i\n", totalMonths);
