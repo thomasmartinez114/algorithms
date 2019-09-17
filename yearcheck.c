@@ -9,43 +9,27 @@ int main(void)
 
     int currMonth = 9;
 
+    // This will be sum of months
     int totalMonths = 0;
 
     int pastYear = 1992;
 
     int currYear = 2019;
 
+    // This will be sum of years
     int totalYears = 0;
-
-    // if statement
-    // if currMonth > pastMonth {
-    // do currMonth - pastMonth
-    //}
 
     // implement Do While loop instead?
 
-    if (pastMonth < currMonth)
+    if (pastMonth < currMonth && pastYear < currYear)
     {
         totalMonths = currMonth - pastMonth;
+        totalYears = currYear - pastYear;
     }
     else
     {
         totalMonths = pastMonth - currMonth;
     }
 
-    printf("Months passed: %i\n", totalMonths);
-
-    // int totalMonths = (currMonth - pastMonth) / 12;
-
-    // printf("%i\n", totalMonths);
+    printf("Months passed: %i\nYears passed: %i\n", totalMonths, totalYears);
 }
-
-// int main(void)
-// {
-//     // Iteratively double i
-//     for (int i = 1; ; i *= 2)
-//     {
-//         printf("%i\n", i);
-//         sleep(1);
-//     }
-// }
