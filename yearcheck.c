@@ -20,6 +20,8 @@ int main(void)
     int totalYears = 0;
 
     // implement Do While loop instead?
+    // do [getint]
+    // while (something)
 
     if (pastMonth < currMonth && pastYear < currYear)
     {
@@ -29,6 +31,7 @@ int main(void)
     else
     {
         totalMonths = pastMonth - currMonth;
+        totalYears = pastYear - currYear;
     }
 
     printf("Months passed: %i\nYears passed: %i\n", totalMonths, totalYears);
