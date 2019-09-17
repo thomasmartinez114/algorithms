@@ -4,24 +4,23 @@
 // current time should be updated automatically not hard coded
 // static it first then make it dynamic
 
-var readline = require('readline-sync');
+const readline = require('readline-sync');
+const date = new Date();
 
 // Get user input month
-var enterMonth = readline.question('Enter a month 1-12: ');
+let enterMonth = readline.question('Enter a month 1-12: ');
 
 // Get user input year
-var enterYear = readline.question('Enter a year - xxxx format: '); // Constraint to 4 digit entry
+let enterYear = readline.question('Enter a year - xxxx format: ');
 
 // Populate current month and year
-var currentYear = new Date().getFullYear();
-var currentMonth = new Date().getMonth() + 1;
+let currentYear = date.getFullYear();
+let currentMonth = date.getMonth() + 1;
 
 // Summing up the months years
-var totalMonths = enterMonth / 12;
-var totalMonthsTwo = totalMonths.toFixed(2);
-var totalYears = currentYear - enterYear;
+let totalMonths = enterMonth / 12;
+let totalYears = currentYear - enterYear;
 let combinedTime = totalYears + totalMonths;
 
-// console.log(`${currentMonth} & ${currentYear}`);
-// console.log(enterMonth);
+// Console Log the time passed
 console.log(`The total amount of time passed it: ${combinedTime.toFixed(2)}`);
