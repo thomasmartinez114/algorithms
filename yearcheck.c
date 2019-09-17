@@ -9,18 +9,29 @@ int main(void)
 
     int currMonth = 9;
 
+    int totalMonths = 0;
+
     int pastYear = 1992;
 
     int currYear = 2019;
+
+    int totalYears = 0;
 
     // if statement
     // if currMonth > pastMonth {
     // do currMonth - pastMonth
     //}
 
-    int totalMonths = (currMonth - pastMonth) / 12;
+    if (pastMonth < currMonth)
+    {
+        totalMonths = currMonth - pastMonth;
+    }
 
-    printf("%i\n", totalMonths);
+    printf("Months passed: %i\n", totalMonths);
+
+    // int totalMonths = (currMonth - pastMonth) / 12;
+
+    // printf("%i\n", totalMonths);
 }
 
 // int main(void)
