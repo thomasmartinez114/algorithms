@@ -8,6 +8,11 @@
 
 // Remember to use Read - Search - Ask if you get stuck.Try to pair program.Write your own code.
 
-do {
-  stuff;
-} while (something);
+function sumFibs(num) {
+  const arr = [1, 1, 2, 3, 5, 8];
+  for (var i = 0; i < arr.length; i++) {
+    console.log(i);
+  }
+}
+
+sumFibs(4);
