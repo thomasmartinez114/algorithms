@@ -2,19 +2,20 @@
 
 #include <stdio.h>
 #include <cs50.h>
+#include <time.h>
 
 int main(void)
 {
     int pastMonth = 6;
 
-    int currMonth = 9;
+    int currMonth = tm_mon + 1;
 
     // This will be sum of months
     int totalMonths = 0;
 
     int pastYear = 1992;
 
-    int currYear = 2019;
+    int currYear = tm_year;
 
     // This will be sum of years
     int totalYears = 0;
