@@ -11,8 +11,13 @@
 function sumFibs(num) {
   const arr = [1, 1, 2, 3, 5, 8];
   for (var i = 0; i < arr.length; i++) {
-    console.log(i);
+    console.log(arr[i]);
   }
 }
 
 sumFibs(4);
+
+// while (i < 10) {
+//   text += "The number is " + i;
+//   i++;
+// }
