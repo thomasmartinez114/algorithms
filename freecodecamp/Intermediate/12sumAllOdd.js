@@ -10,8 +10,12 @@
 
 function sumFibs(num) {
   const arr = [1, 1, 2, 3, 5, 8];
+  var sum = 0;
+
   for (var i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+    // console.log(arr[i]);
+    sum += i;
+    console.log(sum);
   }
 }
 
