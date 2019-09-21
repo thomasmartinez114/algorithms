@@ -14,7 +14,11 @@ int main(void)
 
     tm *local = localtime(&now);
 
-    int pastMonth = 6;
+    int pastMonth = 0;
+    printf("Please a numerical month: ");
+    // scanf() will allow us to read what the user types in
+    scanf("%i", &pastMonth);
+    // printf("%i", pastMonth);
 
     int currMonth = local->tm_mon + 1;
 
