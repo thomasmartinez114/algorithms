@@ -16,12 +16,12 @@ int main(void)
 
     // User input for month
     int pastMonth = 0;
-    printf("Please a numerical month: ");
+    printf("Enter your birth month (xx format): ");
     scanf("%i", &pastMonth); // scanf() will allow us to read what the user types in
 
     // User input for year
     int pastYear = 0;
-    printf("Please enter a year in xxxx format: ");
+    printf("Please enter your birth year (xxxx format): ");
     scanf("%i", &pastYear);
 
     // Current month & year
