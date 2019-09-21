@@ -32,13 +32,13 @@ int main(void)
     int totalMonths = 0;
     int totalYears = 0;
 
-    // implement Do While loop instead?
-    // do [getint]
-    // while (something)
-
-    if (pastMonth < currMonth && pastYear < currYear)
+    // Conditons to summations
+    if (pastMonth < currMonth)
     {
         totalMonths = currMonth - pastMonth;
+    }
+    if (pastYear < currYear)
+    {
         totalYears = currYear - pastYear;
     }
     else
@@ -46,6 +46,18 @@ int main(void)
         totalMonths = pastMonth - currMonth;
         totalYears = pastYear - currYear;
     }
-
-    printf("Months passed: %i\nYears passed: %i\n", totalMonths, totalYears);
+    printf("Years passed: %i\nMonths passed: %i\n", totalYears, totalMonths);
 }
+
+// if (pastMonth < currMonth && pastYear < currYear)
+// {
+//     totalMonths = currMonth - pastMonth;
+//     totalYears = currYear - pastYear;
+// }
+// else
+// {
+//     totalMonths = pastMonth - currMonth;
+//     totalYears = pastYear - currYear;
+// }
+
+// printf("Months passed: %i\nYears passed: %i\n", totalMonths, totalYears);
