@@ -8,19 +8,29 @@ const readline = require('readline-sync');
 const date = new Date();
 
 // Get user input month
-let enterMonth = readline.question('Enter a month 1-12: ');
+let pastMonth = readline.question('Enter a month 1-12: ');
 
 // Get user input year
-let enterYear = readline.question('Enter a year - xxxx format: ');
+let pastYear = readline.question('Enter a year - xxxx format: ');
 
 // Populate current month and year
-let currentYear = date.getFullYear();
-let currentMonth = date.getMonth() + 1;
+let currYear = date.getFullYear();
+let currMonth = date.getMonth() + 1;
 
 // Summing up the months years
-let totalMonths = (enterMonth - currentMonth) / 12;
-let totalYears = currentYear - enterYear;
-let combinedTime = totalYears + Math.abs(totalMonths);
+let totalMonths = 0;
+let totalYears = 0;
+let timeElapsed = totalYears + totalMonths;
 
-// Console Log the time passed
-console.log(`The total amount of time passed it: ${combinedTime.toFixed(2)}`);
+if (pastMonth < currMonth) {
+  totalMonths = (currMonth - pastMonth) / 12;
+  //   console.log(totalMonths);
+}
+if (pastYear < currYear) {
+  totalYears = currYear - pastYear;
+  //   console.log(totalYears);
+} else {
+  totalMonths = (pastMonth - currMonth) / 12;
+  totalYears = pastYear - currYear;
+}
+console.log('Total years passed is: ', totalYears + totalMonths);
