@@ -4,9 +4,15 @@
 #include <stdlib.h>
 #include <time.h>
 
+// initialize struct
+typedef struct tm tm;
+
 int main(void)
 {
-    struct tm *local = localtime(&now);
+    time_t now;
+    time(&now);
+
+    tm *local = localtime(&now);
 
     int pastMonth = 6;
 
