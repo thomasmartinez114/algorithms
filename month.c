@@ -11,5 +11,9 @@ int main()
     time(&currentTime);
 
     struct tm *myTime = localtime(&currentTime);
-    printf("%i\n", myTime->tm_mon + 1);
+    printf("%i/%i/%i\n", myTime->tm_mon + 1, myTime->tm_mday, myTime->tm_year + 1900);
+
+    // Print the following
+    // m/d/y
+    // 9/20/2019
 }
