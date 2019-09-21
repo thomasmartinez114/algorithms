@@ -15,9 +15,9 @@ int main(void)
     tm *local = localtime(&now);
 
     // User input for month
-    int pastMonth = 0;
+    float pastMonth;
     printf("Enter your birth month (xx format): ");
-    scanf("%i", &pastMonth); // scanf() will allow us to read what the user types in
+    scanf("%f", &pastMonth); // scanf() will allow us to read what the user types in
 
     // User input for year
     int pastYear = 0;
@@ -29,13 +29,14 @@ int main(void)
     int currYear = local->tm_year + 1900;
 
     // Sum of months and years
-    int totalMonths = 0;
+    float totalMonths;
     int totalYears = 0;
+    // grandTotal = totalYears + totalMonths;
 
     // Conditons to summations
     if (pastMonth < currMonth)
     {
-        totalMonths = currMonth - pastMonth;
+        totalMonths = (currMonth - pastMonth) / 12;
     }
     if (pastYear < currYear)
     {
@@ -43,10 +44,11 @@ int main(void)
     }
     else
     {
-        totalMonths = pastMonth - currMonth;
+        totalMonths = (pastMonth - currMonth) / 12;
         totalYears = pastYear - currYear;
     }
-    printf("Years passed: %i\nMonths passed: %i\n", totalYears, totalMonths);
+    printf("Years passed: %i\nMonths passed: %.2f\n", totalYears, totalMonths);
+    // printf("Total time passed: %.2f", grandTotal);
 }
 
 // if (pastMonth < currMonth && pastYear < currYear)
