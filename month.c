@@ -2,19 +2,14 @@
 // https : //www.youtube.com/watch?v=4j0pRe8rxhs
 
 #include <stdio.h>
-#include <cs50.h>
+#include <stdlib.h>
 #include <time.h>
 
-// Define struct
-typedef struct tm tm;
-
-int main(void)
+int main()
 {
     time_t currentTime;
     time(&currentTime);
 
-    printf("%s\n", ctime(&currentTime));
-
-    // Access what month it is
-    tm *myTime = localtime(&currentTime);
+    struct tm *myTime = localtime(&currentTime);
+    printf("%i\n", myTime->tm_mon + 1);
 }
