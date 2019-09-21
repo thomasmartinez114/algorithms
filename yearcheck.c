@@ -1,21 +1,23 @@
 // https : //stackoverflow.com/questions/1442116/how-to-get-the-date-and-time-values-in-a-c-program
 
 #include <stdio.h>
-#include <cs50.h>
+#include <stdlib.h>
 #include <time.h>
 
 int main(void)
 {
+    struct tm *local = localtime(&now);
+
     int pastMonth = 6;
 
-    int currMonth = tm_mon + 1;
+    int currMonth = local->tm_mon + 1;
 
     // This will be sum of months
     int totalMonths = 0;
 
     int pastYear = 1992;
 
-    int currYear = tm_year;
+    int currYear = local->tm_year + 1900;
 
     // This will be sum of years
     int totalYears = 0;
