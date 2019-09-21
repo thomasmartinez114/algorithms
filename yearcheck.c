@@ -14,22 +14,22 @@ int main(void)
 
     tm *local = localtime(&now);
 
+    // User input for month
     int pastMonth = 0;
     printf("Please a numerical month: ");
-    // scanf() will allow us to read what the user types in
-    scanf("%i", &pastMonth);
-    // printf("%i", pastMonth);
+    scanf("%i", &pastMonth); // scanf() will allow us to read what the user types in
 
+    // User input for year
+    int pastYear = 0;
+    printf("Please enter a year in xxxx format: ");
+    scanf("%i", &pastYear);
+
+    // Current month & year
     int currMonth = local->tm_mon + 1;
-
-    // This will be sum of months
-    int totalMonths = 0;
-
-    int pastYear = 1992;
-
     int currYear = local->tm_year + 1900;
 
-    // This will be sum of years
+    // Sum of months and years
+    int totalMonths = 0;
     int totalYears = 0;
 
     // implement Do While loop instead?
