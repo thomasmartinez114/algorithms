@@ -9,14 +9,14 @@
 // Remember to use Read - Search - Ask if you get stuck.Try to pair program.Write your own code.
 
 function sumFibs(num) {
-  const arr = [1, 1, 2, 3, 5, 8];
+  let arr = [1, 1, 2, 3, 5, 8];
   var sum = 0;
 
   for (var i = 0; i < arr.length; i++) {
-    // console.log(arr[i]);
-    sum += i;
+    sum = arr[i - 1] + arr[i - 2];
     console.log(sum);
   }
+  console.log(sum);
 }
 
 sumFibs(4);
