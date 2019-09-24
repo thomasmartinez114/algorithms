@@ -9,20 +9,15 @@ function largestOfFour(arr) {
   var largestNumber = [];
 
   for (var i = 0; i < arr.length; i++) {
+    // Sort the numbers in the arrays
     arr[i].sort(function(a, b) {
       return a - b;
     });
-    // var sort = arr[i] - 1;
-    // console.log(`The high is ${sort}`);
 
     console.log(`Print out arr: ${arr[i]}`);
-    var high = arr[i].slice(-1);
+    var high = arr[i].slice(-1); // Get the last element which is the highest
     console.log(high);
-    largestNumber.push(high);
-    // largestNumber.parseInt().push(arr[i] - 1);
-    // console.log(largestNumber);
-    // for (var j = 0; j < arr[i].length; j++) {
-    //   console.log(`Print out the numbers in arr: ${arr[i][j]}`);
+    largestNumber.push(high); // Push the highest to the new array
   }
   console.log(largestNumber);
 }
