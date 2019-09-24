@@ -18,6 +18,7 @@ function largestOfFour(arr) {
     console.log(`Print out arr: ${arr[i]}`);
     var high = arr[i].slice(-1);
     console.log(high);
+    largestNumber.push(high);
     // largestNumber.parseInt().push(arr[i] - 1);
     // console.log(largestNumber);
     // for (var j = 0; j < arr[i].length; j++) {
