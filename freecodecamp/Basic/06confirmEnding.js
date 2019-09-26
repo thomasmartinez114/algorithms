@@ -1,9 +1,9 @@
 function confirmEnding(str, target) {
   // console.log(str.substr(-1)); // logs substr(-1) = 'n'
   if (str.substr(-target.length) === target) {
-    console.log('True');
+    return true;
   } else {
-    console.log('False');
+    return false;
   }
 }
 
