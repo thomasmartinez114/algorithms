@@ -16,12 +16,15 @@ function largestOfFour(arr) {
 
     console.log(`Print out arr: ${arr[i]}`);
     var high = arr[i].slice(-1).join(''); // Get the last element which is the highest -- join(' ') removes the subarrays
+    console.log('regular high: ' + high);
+    high = parseInt(high);
     console.log(high);
     largestNumber.push(high); // Push the highest to the new array
   }
   console.log(largestNumber);
   console.log(typeof largestNumber);
   return largestNumber;
+  return high;
 }
 
 // Doesnt pass FCC but displays what we want
