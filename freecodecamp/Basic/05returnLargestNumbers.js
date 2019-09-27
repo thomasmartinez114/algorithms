@@ -20,13 +20,15 @@ function largestOfFour(arr) {
     largestNumber.push(high); // Push the highest to the new array
   }
   console.log(largestNumber);
+  console.log(typeof largestNumber);
+  return largestNumber;
 }
 
 // Doesnt pass FCC but displays what we want
 
 largestOfFour([
-  [13, 27, 18, 26],
-  [4, 5, 1, 3],
-  [32, 35, 37, 39],
-  [1000, 1001, 857, 1]
+  [4, 9, 1, 3],
+  [13, 35, 18, 26],
+  [32, 35, 97, 39],
+  [1000000, 1001, 857, 1]
 ]);
