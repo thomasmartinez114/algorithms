@@ -8,8 +8,6 @@ function truncateString(str, num) {
   // console.log(eachLetter); // log out the letters by what num - 1 is
   var newStr = eachLetter + '...';
   console.log(newStr); // log what the words would be with '...' added
-
-  console.log(num);
 }
 
 truncateString(
