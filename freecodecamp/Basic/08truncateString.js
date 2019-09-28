@@ -12,5 +12,5 @@ function truncateString(str, num) {
 
 truncateString(
   'A-tisket a-tasket A green and yellow basket',
-  'A-tisket a-tasket A green and yellow basket'.length
+ 8
 );
