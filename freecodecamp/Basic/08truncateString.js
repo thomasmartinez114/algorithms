@@ -7,10 +7,10 @@ function truncateString(str, num) {
   var eachLetter = str.slice(0, num);
   // console.log(eachLetter); // log out the letters by what num - 1 is
   var newStr = eachLetter + '...';
-  console.log(newStr); // log what the words would be with '...' added
+  console.log(`The truncated by number ${num} is now "${newStr}"`); // log what the words would be with '...' added
+  return newStr;
 }
 
-truncateString(
-  'A-tisket a-tasket A green and yellow basket',
- 8
-);
+truncateString('A-tisket a-tasket A green and yellow basket', 8);
+truncateString("Peter Piper picked a peck of pickled peppers", 11)
+//truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length
