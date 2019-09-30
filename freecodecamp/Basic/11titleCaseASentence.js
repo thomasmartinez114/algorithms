@@ -20,9 +20,9 @@ titleCase("I'm a little tea pot");
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 // https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
 
-\\\\\\\\\\\\\\\\\
-\\ This works  \\
-\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\
+// \\ This works  \\
+// \\\\\\\\\\\\\\\\\
 
 
 // function titleCase(str) {
