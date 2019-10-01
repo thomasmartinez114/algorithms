@@ -3,6 +3,7 @@ function whatIsInAName(collection, source) {
     var arr = [];
     // Only change code below this line
     var keys = Object.keys(source);
+
     for (let item = 0; item < collection.length; item++) {
         var isGood = true;
         for (let key = 0; key < keys.length; key++) {
@@ -22,6 +23,7 @@ function whatIsInAName(collection, source) {
         }
     }
     // Only change code above this line
+    console.log(arr);
     return arr;
 }
 whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
