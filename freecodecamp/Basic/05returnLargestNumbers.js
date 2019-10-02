@@ -15,9 +15,9 @@ function largestOfFour(arr) {
     });
 
     console.log(`Print out arr: ${arr[item]}`);
-    let high = arr[item].slice(-1).join(''); // Get the last element which is the highest
+    let high = arr[item].slice(-1)[0]; // Get the last element which is the highest
     console.log('sub array high: ' + high);
-    high = parseInt(high); // convert from string to int
+    // high = parseInt(high); // convert from string to int
     // console.log(high);
     largestNumber.push(high); // Push the highest to the new array
   }
