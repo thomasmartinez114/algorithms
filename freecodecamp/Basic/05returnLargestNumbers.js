@@ -6,28 +6,25 @@
 
 function largestOfFour(arr) {
   // You can do this!
-  var largestNumber = [];
+  let largestNumber = [];
 
-  for (var i = 0; i < arr.length; i++) {
+  for (let item = 0; item < arr.length; item++) {
     // Sort the numbers in the arrays
-    arr[i].sort(function(a, b) {
+    arr[item].sort(function (a, b) {
       return a - b;
     });
 
-    console.log(`Print out arr: ${arr[i]}`);
-    var high = arr[i].slice(-1).join(''); // Get the last element which is the highest -- join(' ') removes the subarrays
-    console.log('regular high: ' + high);
-    high = parseInt(high);
-    console.log(high);
+    console.log(`Print out arr: ${arr[item]}`);
+    let high = arr[item].slice(-1).join(''); // Get the last element which is the highest
+    console.log('sub array high: ' + high);
+    high = parseInt(high); // convert from string to int
+    // console.log(high);
     largestNumber.push(high); // Push the highest to the new array
   }
-  console.log(largestNumber);
-  console.log(typeof largestNumber);
+  console.log("arr with largest numbers: " + largestNumber);
+  // console.log(typeof largestNumber);
   return largestNumber;
-  return high;
 }
-
-// Doesnt pass FCC but displays what we want
 
 largestOfFour([
   [4, 9, 1, 3],
