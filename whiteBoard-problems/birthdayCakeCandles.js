@@ -8,7 +8,7 @@ function birthdayCakeCandles(ar) {
     let total = 0;
 
     for (let candles = 0; candles < ar.length; candles++) {
-        if (candles >= arr[candles]) {
+        if (candles >= ar[candles]) {
             total++;
         }
     }
