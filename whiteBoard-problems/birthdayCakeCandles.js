@@ -5,6 +5,7 @@
 
 function birthdayCakeCandles(ar) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     let ar = [4, 2, 3, 5, 3];
     let total = 0;
 
@@ -20,38 +21,35 @@ function birthdayCakeCandles(ar) {
     // console.log(nums)
     // nums = nums.toString().substring(0, ar);
     // nums = parseInt(nums);
+=======
+>>>>>>> corrections
     let total = 0;
-    let can = [];
-    console.log(can);
+    let allCandles = [];
 
     for (let candles = 0; candles < ar; candles++) {
-        let candle = Math.floor(ar + Math.random());
-        can.push(candle);
+        let candleHeight = Math.floor(Math.random() * ar + 1) // Math.floor() rounds downward
+        allCandles.push(candleHeight);
     }
-    console.log(can);
+    allCandles.sort(function (a, b) { return b - a });
+    console.log(allCandles);
+    let tallestCandle = allCandles[0];
 
-    // for (let candles = 0; candles < nums.length; candles++) {
-    //     if (candles >= nums[candles]) {
-    //         total++;
-    //     } else {
-    //         continue;
-    //     }
-    // }
-    // console.log(total);
+    for (let i = 0; i < allCandles.length; i++) {
+        if (allCandles[i] == tallestCandle) {
+            total++;
+        }
+    }
+    console.log(`Amount of highest candles ${total}`);
+    return total;
 }
 
-birthdayCakeCandles(4);
+birthdayCakeCandles(5);
 
 
 
 // https://stackoverflow.com/questions/29640432/generate-4-digit-random-number-using-substring/29640472
-// You can get 4-digit this way .substring(startIndex, length), which would be in your case .substring(0, 4). To be able to use .substring() you will need to convert a to string by using .toString(). At the end, you can convert the resulting output into integer by using parseInt :
+// You can get 4-digit this way .substring(startIndex, length), which would be in your case .substring(0, 4). To be able to use .substring() you will need to convert a to string by using .toString(). At the end, you can convert the resulting output into integer by using parseInt
 
-//  var a = Math.floor(100000 + Math.random() * 900000)
-//  a = a.toString().substring(0, 4);
-
-//  a =  parseInt(a);
-
-//  alert(a);
+// https://www.youtube.com/watch?v=nBwQGT99qi4
 
 >>>>>>> corrections
