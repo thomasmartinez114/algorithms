@@ -26,7 +26,7 @@ function birthdayCakeCandles(ar) {
 
 birthdayCakeCandles(5);
 
-
+// https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 
 // https://stackoverflow.com/questions/29640432/generate-4-digit-random-number-using-substring/29640472
 // You can get 4-digit this way .substring(startIndex, length), which would be in your case .substring(0, 4). To be able to use .substring() you will need to convert a to string by using .toString(). At the end, you can convert the resulting output into integer by using parseInt
