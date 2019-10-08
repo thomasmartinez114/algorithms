@@ -12,9 +12,10 @@ function birthdayCakeCandles(ar) {
     let allCandles = [];
 
     for (let candles = 0; candles < ar; candles++) {
-        let candleHeight = Math.floor(Math.random() * ar + 1)
+        let candleHeight = Math.floor(Math.random() * ar + 1) // Math.floor() rounds downward
         allCandles.push(candleHeight);
     }
+    allCandles.sort(function (a, b) { return a - b });
     console.log(allCandles);
 
     // for (let candles = 0; candles < nums.length; candles++) {
@@ -40,4 +41,6 @@ birthdayCakeCandles(5);
 //  a =  parseInt(a);
 
 //  alert(a);
+
+// https://www.youtube.com/watch?v=nBwQGT99qi4
 
