@@ -9,14 +9,13 @@ function birthdayCakeCandles(ar) {
     // nums = nums.toString().substring(0, ar);
     // nums = parseInt(nums);
     let total = 0;
-    let can = [];
-    console.log(can);
+    let allCandles = [];
 
     for (let candles = 0; candles < ar; candles++) {
-        let candle = Math.floor(ar + Math.random());
-        can.push(candle);
+        let candleHeight = Math.floor(Math.random() * ar + 1)
+        allCandles.push(candleHeight);
     }
-    console.log(can);
+    console.log(allCandles);
 
     // for (let candles = 0; candles < nums.length; candles++) {
     //     if (candles >= nums[candles]) {
@@ -28,7 +27,7 @@ function birthdayCakeCandles(ar) {
     // console.log(total);
 }
 
-birthdayCakeCandles(4);
+birthdayCakeCandles(5);
 
 
 
