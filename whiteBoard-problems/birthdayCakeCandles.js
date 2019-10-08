@@ -4,25 +4,6 @@
 // get # of candles that can be blown out
 
 function birthdayCakeCandles(ar) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    let ar = [4, 2, 3, 5, 3];
-    let total = 0;
-
-    for (let candles = 0; candles < ar.length; candles++) {
-        if (candles >= ar[candles]) {
-            total++;
-        }
-    }
-    console.log(total);
-}
-=======
-    // let nums = Math.floor(1000 + Math.random() * 900000)
-    // console.log(nums)
-    // nums = nums.toString().substring(0, ar);
-    // nums = parseInt(nums);
-=======
->>>>>>> corrections
     let total = 0;
     let allCandles = [];
 
@@ -51,5 +32,3 @@ birthdayCakeCandles(5);
 // You can get 4-digit this way .substring(startIndex, length), which would be in your case .substring(0, 4). To be able to use .substring() you will need to convert a to string by using .toString(). At the end, you can convert the resulting output into integer by using parseInt
 
 // https://www.youtube.com/watch?v=nBwQGT99qi4
-
->>>>>>> corrections
