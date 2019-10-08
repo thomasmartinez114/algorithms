@@ -4,10 +4,6 @@
 // get # of candles that can be blown out
 
 function birthdayCakeCandles(ar) {
-    // let nums = Math.floor(1000 + Math.random() * 900000)
-    // console.log(nums)
-    // nums = nums.toString().substring(0, ar);
-    // nums = parseInt(nums);
     let total = 0;
     let allCandles = [];
 
@@ -16,16 +12,16 @@ function birthdayCakeCandles(ar) {
         allCandles.push(candleHeight);
     }
     allCandles.sort(function (a, b) { return b - a });
-    console.log(`Tallest candle blown out is: ${allCandles[0]}`);
+    console.log(allCandles);
+    let tallestCandle = allCandles[0];
 
-    // for (let candles = 0; candles < nums.length; candles++) {
-    //     if (candles >= nums[candles]) {
-    //         total++;
-    //     } else {
-    //         continue;
-    //     }
-    // }
-    // console.log(total);
+    for (let i = 0; i < allCandles.length; i++) {
+        if (allCandles[i] == tallestCandle) {
+            total++;
+        }
+    }
+    console.log(`Amount of highest candles ${total}`);
+    return total;
 }
 
 birthdayCakeCandles(5);
@@ -33,14 +29,7 @@ birthdayCakeCandles(5);
 
 
 // https://stackoverflow.com/questions/29640432/generate-4-digit-random-number-using-substring/29640472
-// You can get 4-digit this way .substring(startIndex, length), which would be in your case .substring(0, 4). To be able to use .substring() you will need to convert a to string by using .toString(). At the end, you can convert the resulting output into integer by using parseInt :
-
-//  var a = Math.floor(100000 + Math.random() * 900000)
-//  a = a.toString().substring(0, 4);
-
-//  a =  parseInt(a);
-
-//  alert(a);
+// You can get 4-digit this way .substring(startIndex, length), which would be in your case .substring(0, 4). To be able to use .substring() you will need to convert a to string by using .toString(). At the end, you can convert the resulting output into integer by using parseInt
 
 // https://www.youtube.com/watch?v=nBwQGT99qi4
 
