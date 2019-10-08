@@ -15,8 +15,8 @@ function birthdayCakeCandles(ar) {
         let candleHeight = Math.floor(Math.random() * ar + 1) // Math.floor() rounds downward
         allCandles.push(candleHeight);
     }
-    allCandles.sort(function (a, b) { return a - b });
-    console.log(allCandles);
+    allCandles.sort(function (a, b) { return b - a });
+    console.log(`Tallest candle blown out is: ${allCandles[0]}`);
 
     // for (let candles = 0; candles < nums.length; candles++) {
     //     if (candles >= nums[candles]) {
