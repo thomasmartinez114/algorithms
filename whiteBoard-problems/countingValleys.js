@@ -8,17 +8,22 @@ function countingValleys(n, s) {
     // CONST U = 1;
 
     for (let steps = 0; steps < s.length; steps++) {
-        if (s[steps] === 'D') {
+        if (s[steps] == 'D') {
             hike--;
-        } else if (s[steps] === 'U') {
+            console.log('Down');
+        } else if (s[steps] == 'U') {
             hike++;
+            console.log('Up');
         } else {
             break;
         }
+        console.log(`Hike steps ${hike}`);
     }
     console.log(hike);
+    return hike;
 }
 
+countingValleys(12, "DDUUDDUDUUUD");
 
 
 // https://www.hackerrank.com/challenges/counting-valleys/problem?h_r=internal-search
