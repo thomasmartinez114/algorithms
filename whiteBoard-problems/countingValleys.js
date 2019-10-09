@@ -4,26 +4,27 @@
 
 function countingValleys(n, s) {
     let hike = 0;
+    let valleys = 0;
     // CONST D = -1;
     // CONST U = 1;
 
     for (let steps = 0; steps < s.length; steps++) {
         if (s[steps] == 'D') {
             hike--;
-            console.log('Down');
-        } else if (s[steps] == 'U') {
-            hike++;
-            console.log('Up');
-        } else {
-            break;
         }
-        console.log(`Hike steps ${hike}`);
+
+        if (s[steps] == 'U') {
+            hike++;
+        }
+
+        if (hike === 0 && s[steps] == 'U') {
+            valleys++
+        }
     }
-    console.log(hike);
-    return hike;
+    return valleys;
 }
 
-countingValleys(12, "DDUUDDUDUUUD");
+countingValleys(8, "UDDDUDUU");
 
 
 // https://www.hackerrank.com/challenges/counting-valleys/problem?h_r=internal-search
