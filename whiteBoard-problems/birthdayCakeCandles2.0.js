@@ -13,6 +13,7 @@ function birthdayCakeCandles(ar) {
             total++;
         }
     }
+    console.log(total);
     return total;
 }
 
