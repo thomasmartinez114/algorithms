@@ -13,7 +13,7 @@ function getIndexToIns(arr, num) {
 
     for (let item = 0; item < arr.length; item++) {
         if (num < arr[item]) {
-            arr.push(num);
+            arr.push(num); // push using indexOf?
             console.log(arr)
         }
     }
