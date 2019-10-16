@@ -1,14 +1,19 @@
 // https://app.codesignal.com/company-challenges/uber/HNQwGHfKAoYsz9KX6
 
-function fareEstimator(
-  ride_time,
-  ride_distance,
-  cost_per_minute,
-  cost_per_mile
-) {
+function fareEstimator() {
+  // input int for ride_time
+  // input int for ride_distance
+
   // ((cost per min * ride time) + (cost per mile * ride dist))
 
   let ridePrice = [];
+  let ride_time = 30;
+  let ride_distance = 7;
+  let cost_per_minute = 10;
+  let cost_per_mile = 1;
+
+  let fare = cost_per_minute * ride_time + cost_per_mile * ride_distance;
+  console.log(`Total cost for ride is: $${fare}`);
 }
 
-fareEstimator(30, 7, [0.2, 0.35, 0.4, 0.45], [1.1, 1.8, 2.3, 3.5]);
+fareEstimator();
