@@ -13,22 +13,22 @@
 // Remember to use Read - Search - Ask if you get stuck.Write your own code.
 
 function factorialize(num) {
-  var sum = 1;
+  let sum = 1;
 
-  for (var i = 1; i <= num; i++) {
+  for (let i = 1; i <= num; i++) {
     sum *= i;
+    console.log(sum);
   }
-  //console.log(sum)
   return sum;
 }
-
-factorialize(5);
-factorialize(5);
 
 factorialize(5);
 factorialize(10);
 factorialize(20);
 factorialize(0);
+
+// Time: 04:20
+// Grade: 3
 
 //////////////////
 // 1st attempt //
