@@ -23,5 +23,5 @@ function sumAll(arr) {
 
 sumAll([1, 4]);
 
-// Time: 27:34
-// Grade: 1
+// Time 27:34
+// Grade 1
