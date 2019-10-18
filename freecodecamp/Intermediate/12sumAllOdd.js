@@ -20,8 +20,3 @@ function sumFibs(num) {
 }
 
 sumFibs(4);
-
-// while (i < 10) {
-//   text += "The number is " + i;
-//   i++;
-// }
