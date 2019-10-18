@@ -21,12 +21,12 @@ function fareEstimator(
   //     let fare = ((cost_per_minute * ride_time) + (cost_per_mile * ride_distance));
   //     console.log(fare);
 
-  for (let car = 0; car < cost_per_minute.length; car++) {
-    console.log(cost_per_minute[car]);
+  for (let carMin = 0; carMin < cost_per_minute.length; carMin++) {
+    console.log(cost_per_minute[carMin]);
   }
 
-  for (let car = 0; car < cost_per_mile.length; car++) {
-    let mileage = cost_per_mile[car];
+  for (let carMil = 0; carMil < cost_per_mile.length; carMil++) {
+    let mileage = cost_per_mile[carMil];
     console.log(mileage);
   }
 }
