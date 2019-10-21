@@ -24,7 +24,7 @@ function sumAll(arr) {
   }
   console.log(`Total sum: ${sum}`);
 
-  return 1;
+  return sum;
 }
 
 sumAll([1, 4]);
