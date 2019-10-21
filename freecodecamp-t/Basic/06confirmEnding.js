@@ -14,6 +14,9 @@ function confirmEnding(str, target) {
 
 confirmEnding('Bastian', 'n');
 
+// Time: 10.12
+// Grade: 2
+
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
 
 // function confirmEnding(str, target) {
