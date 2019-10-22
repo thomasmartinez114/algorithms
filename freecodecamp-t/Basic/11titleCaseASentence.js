@@ -29,6 +29,9 @@ titleCase("I'm a little tea pot");
 titleCase('sHoRt AnD sToUt');
 titleCase('HERE IS MY HANDLE HERE IS MY SPOUT');
 
+// Time: 40:01
+// Grade: 1
+
 // function titleCase(str) {
 //   var words = str.split(' ');
 //   // console.log(words); // showing words split
