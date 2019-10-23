@@ -13,18 +13,39 @@
 // use filter to get new arr
 
 function diffArray(arr1, arr2) {
-  let newArr = [];
-  let mergedArr = arr1.concat(arr2).sort(function(a, b) {
-    return a - b;
-  });
-  console.log(mergedArr);
-  filteredArr = mergedArr.filter(function())
+  var newArr = [];
+
+  let mergeList = arr1.concat(arr2);
+  console.log(mergeList);
+
+  let uniqueItems = Array.from(new Set(mergeList));
+  console.log(uniqueItems);
 
   // Same, same; but different.
-  return newArr;
+  return uniqueItems;
 }
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+// Time: 53:58
+// Grade: 0
+
+// function diffArray(arr1, arr2) {
+//   let newArr = [];
+//   let mergedArr = arr1.concat(arr2).sort(function(a, b) {
+//     return a - b;
+//   });
+//   console.log(mergedArr);
+//   filteredArr = mergedArr.filter(function())
+
+//   // Same, same; but different.
+//   return newArr;
+// }
+
+// diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+// Time: 45:03
+// Grade: 0
 
 // Referenced sites
 // https://medium.com/front-end-weekly/getting-unique-values-in-javascript-arrays-17063080f836
@@ -32,6 +53,7 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 // https://devdocs.io/javascript/global_objects/array/includes
 // https://codeburst.io/comparison-of-two-arrays-using-javascript-3251d03877fe
 // https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 
 // function diffArray(arr1, arr2) {
 //   var newArr = [];
