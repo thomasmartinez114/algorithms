@@ -9,23 +9,59 @@
 // return new arr with unique elements
 // Loop through arr1 or 2 and check for difference then push those uniqures to newArr
 
-// merge the lists and sort it
-// use filter to get new arr
+// Hint 1
+// Merge the list to make it easy to compare functions.
+
+// Hint 2
+// Use filter to get the new array, you will need to create a callback function.
+
+// Hint 3
+// The best way to go about the callback function is to check if the number from the new merged array is not in both original arrays and return it.
+
+// https://www.youtube.com/watch?v=XAIvkcdj4Ro
 
 function diffArray(arr1, arr2) {
-  var newArr = [];
+  let newArr = [];
+  let mergedArr = arr1.concat(arr2).sort();
+  console.log(mergedArr);
 
-  let mergeList = arr1.concat(arr2);
-  console.log(mergeList);
+  // Filter
 
-  let uniqueItems = Array.from(new Set(mergeList));
-  console.log(uniqueItems);
+  for (var i = 0; i < mergedArr.length; i++) {
+    if (newArr.indexOf(mergedArr[i]) === -1) {
+      newArr.push(mergedArr[i]);
+    }
+  }
 
   // Same, same; but different.
-  return uniqueItems;
+  console.log(newArr);
+  return newArr;
 }
 
+// Time: 52:00
+// Grade: 0
+
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+// should return [4]
+// diffArray(
+//   ['diorite', 'andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'],
+//   ['diorite', 'andesite', 'grass', 'dirt', 'dead shrub']
+// should return ["pink wool"]
+
+// function diffArray(arr1, arr2) {
+//   let newArr = [];
+
+//   let mergeList = arr1.concat(arr2);
+//   console.log(mergeList);
+
+//   let uniqueItems = Array.from(new Set(mergeList));
+//   console.log(uniqueItems);
+
+//   // Same, same; but different.
+//   return uniqueItems;
+// }
+
+// diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 // Time: 53:58
 // Grade: 0
@@ -56,7 +92,7 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 
 // function diffArray(arr1, arr2) {
-//   var newArr = [];
+//   let newArr = [];
 //   // Same, same; but different.
 
 //   // Iterate through arr1
