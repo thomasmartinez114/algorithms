@@ -18,30 +18,68 @@
 // Hint 3
 // The best way to go about the callback function is to check if the number from the new merged array is not in both original arrays and return it.
 
-// https://www.youtube.com/watch?v=XAIvkcdj4Ro
-
 function diffArray(arr1, arr2) {
   let newArr = [];
-  let mergedArr = arr1.concat(arr2).sort();
-  console.log(mergedArr);
+  // Same, same; but different.
 
-  // Filter
-
-  for (var i = 0; i < mergedArr.length; i++) {
-    if (newArr.indexOf(mergedArr[i]) === -1) {
-      newArr.push(mergedArr[i]);
+  // Iterate through arr1
+  for (let i = 0; i < arr1.length; i++) {
+    // Check if the element is in arr2
+    if (arr2.indexOf(arr1[i]) === -1) {
+      // Store the element in newArr
+      newArr.push(arr1[i]);
     }
   }
 
-  // Same, same; but different.
+  // Iterate through arr2
+  for (let i = 0; i < arr2.length; i++) {
+    // Check if the element is in arr1
+    if (arr1.indexOf(arr2[i]) === -1) {
+      // Store the element in newArr
+      newArr.push(arr2[i]);
+    }
+  }
+
   console.log(newArr);
   return newArr;
 }
 
-// Time: 52:00
-// Grade: 0
+// Time: 32:00
+// Grade: 2
 
-diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+// https://www.youtube.com/watch?v=XAIvkcdj4Ro
+
+// function diffArray(arr1, arr2) {
+//   let newArr = [];
+//   let mergedArr = arr1.concat(arr2).sort();
+//   console.log(mergedArr);
+
+//   // Filter
+
+//   for (var i = 0; i < mergedArr.length; i++) {
+//     if (newArr.indexOf(mergedArr[i]) === -1) {
+//       newArr.push(mergedArr[i]);
+//     }
+//   }
+
+//   // Same, same; but different.
+//   console.log(newArr);
+//   return newArr;
+// }
+
+// function diffArray(arr1, arr2) {
+//   let newArr = [];
+//   let mergedArr = arr1.concat(arr2).sort();
+
+//   let unique = mergedArr.filter((x, i, a) => a.indexOf(x) != i);
+
+//   console.log(unique);
+// }
+
+// // Time: 52:00
+// // Grade: 0
+
+// diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 // should return [4]
 // diffArray(
 //   ['diorite', 'andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'],
@@ -90,32 +128,3 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 // https://codeburst.io/comparison-of-two-arrays-using-javascript-3251d03877fe
 // https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
-
-// function diffArray(arr1, arr2) {
-//   let newArr = [];
-//   // Same, same; but different.
-
-//   // Iterate through arr1
-//   for (let i = 0; i < arr1.length; i ++){
-
-//     // Check if the element is in arr2
-//     if (arr2.indexOf(arr1[i]) === -1){
-
-//       // Store the element in newArr
-//       newArr.push(arr1[i])
-//     }
-//   }
-
-//   // Iterate through arr2
-//   for (let i = 0; i < arr2.length; i ++) {
-
-//   // Check if the element is in arr1
-//     if (arr1.indexOf(arr2[i]) === -1){
-
-//   // Store the element in newArr
-//     newArr.push(arr2[i])
-//     }
-//   }
-
-//   return newArr;
-// }
