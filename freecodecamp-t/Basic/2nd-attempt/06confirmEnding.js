@@ -20,3 +20,6 @@ confirmEnding("Bastian", "n");
 
 // Substr()
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
+
+// Time: 15:50
+// Grade: 2
