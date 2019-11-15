@@ -18,19 +18,39 @@
 
 int main(void)
 {
-    // small bars
-    int small = 1; // s
-    // big bars
-    int big = 5; // b
-    // Basket kilos *hard code for now
-    int basketKilos = 9; // x
+    // small bars weight
+    int small; // s
+    // big bars weight
+    int big; // b
+    // Basket kilos
+    int basketKilos; // x
+    printf("Small bars kilograms: ");
+    scanf("%i", &small);
+    printf("Big bars kilograms: ");
+    scanf("%i", &big);
+    printf("Basket max kilograms: ");
+    scanf("%i", &basketKilos);
 
-    // printf("%i", basketKilos);
+    // int smallBars;
+    // int bigBars;
+    // printf("Enter how many small bars: ");
+    // scanf("%i", &smallBars);
+    // printf("Enter how many big bars: ");
+    // scanf("%i", &bigBars);
 
-    int smalls;
-    printf("Enter smalls bars: ");
-    scanf("%d", &smalls);
-    printf("The amount of smalls is %d", smalls);
 
+    // Modulo
+    int remainder = basketKilos % big;
+    printf("Modulo big bars to basket is: %i", remainder);
+
+
+
+
+    // printf("small bars = %i\n", smallBars);
+    // printf("big bars = %i\n", bigBars);
 }
 
+    // int smalls;
+    // printf("Enter smalls bars: ");
+    // scanf("%d", &smalls);
+    // printf("The amount of smalls is %d", smalls);
