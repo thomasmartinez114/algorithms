@@ -9,13 +9,26 @@
 
 // Remember to use Read - Search - Ask if you get stuck.Write your own code.
 
-function mutation(arr) {
-    for (var i = 0; i < arr.length; i++){
-        let lowercase = arr[i].toLowerCase();
-        console.log(lowercase);
+// function mutation(arr) {
+//     for (var i = 0; i < arr.length; i++){
+//         let lowercase = arr[i].toLowerCase();
+//         console.log(lowercase);
 
-        if ()
+//         if ()
+//     }
+// }
+
+function mutation(arr) {
+    let word1 = arr[1].toLowerCase();
+    let word2 = arr[0].toLowerCase();
+
+    for (let letters = 0; letters < word1.length; letters++){
+        if (word2.indexOf(word1[letters]) < 0) return false;
     }
+    return true;
 }
 
 mutation(["hello", "hey"]);
+
+// Time: 09:00
+// Grade: 2
