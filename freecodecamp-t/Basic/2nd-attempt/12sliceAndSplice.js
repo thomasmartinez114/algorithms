@@ -25,7 +25,7 @@ function frankenSplice(arr1, arr2, num){
     console.log(arr2Copy);
 }
 
-frankenSplice([1, 2, 3, 4, 5], [6, 7, 8, 9, 10], 3);
+frankenSplice([1, 2, 3], [4, 5], 1)
 
 // Time: 10:22
 // Grade: 3
