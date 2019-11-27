@@ -5,20 +5,21 @@
 
 
 function compareTriplets(a, b) {
-    let aliciaScore = 0;
-    let bobbyScore = 0;
+    let totalScores = [0, 0]
+    // [a, b]
 
     for (let score = 0; score < a.length; score++){
         // console.log(a[score]);
         // console.log(b[score]);
         if (a[score] > b[score]){
-            aliciaScore++;
-        } else {
-            bobbyScore++;
+            totalScores[0]++;
+        }
+
+        if (b[score] > a[score]){
+            totalScores[1]++;
         }
     }
-    console.log(aliciaScore);
-    console.log(bobbyScore);
+    console.log(totalScores);
 }
 
 
