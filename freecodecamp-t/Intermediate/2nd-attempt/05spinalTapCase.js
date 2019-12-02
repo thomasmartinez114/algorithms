@@ -8,7 +8,8 @@
 function spinalCase(str){
     // new str to manipulate
     // find all matches were lowercase is next to uppercase
-    //$1 first capture group lowercases - $2 second capture group uppercases
+    // replace lowercase-Uppercase words to lowercase-space-uppercase
+    // $1 $2 does this
     str = str.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase();
     // replace spaces or underscores with hiphens
     let newWord = str.replace(/\s|_/g, '-');
