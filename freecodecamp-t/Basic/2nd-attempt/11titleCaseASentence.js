@@ -10,23 +10,31 @@
 // cap first letter of each word
 
 function titleCase(str) {
-  let words = str.toLowerCase().split(' ');
-  //   console.log(words);
+  let words = str.toLowerCase();
 
-  let finalWords = [];
-
-  for (var i = 0; i < words.length; i++) {
-    let capWords = words[i][0].toUpperCase() + words[i].slice(1);
-    // console.log(capWords);
-    finalWords.push(capWords);
-  }
-
-  let titleCase = finalWords.join(' ');
-  console.log(titleCase);
-  return titleCase;
+  console.log(words);
 }
 
-titleCase("I'm a little tea pot");
+titleCase("I'm A Little TeaPot HA");
+
+// function titleCase(str) {
+//   let words = str.toLowerCase().split(' ');
+//   //   console.log(words);
+
+//   let finalWords = [];
+
+//   for (var i = 0; i < words.length; i++) {
+//     let capWords = words[i][0].toUpperCase() + words[i].slice(1);
+//     // console.log(capWords);
+//     finalWords.push(capWords);
+//   }
+
+//   let titleCase = finalWords.join(' ');
+//   console.log(titleCase);
+//   return titleCase;
+// }
+
+// titleCase("I'm a little tea pot");
 
 // Time: 18:12
 // Grade: 4
