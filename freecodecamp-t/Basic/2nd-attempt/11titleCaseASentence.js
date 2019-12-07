@@ -10,9 +10,21 @@
 // cap first letter of each word
 
 function titleCase(str) {
-  let words = str.toLowerCase();
+  let words = str.toLowerCase().split(' ');
+  let final = [];
 
-  console.log(words);
+  for (var letters = 0; letters < words.length; letters++) {
+    let titleCase = words[letters][0].toUpperCase() + words[letters].slice(1);
+
+    final.push(titleCase);
+  }
+
+  // console.log(words);
+  console.log(final);
+
+  // Join words as one sentence now
+  let sentence = final.join(' ');
+  console.log(sentence);
 }
 
 titleCase("I'm A Little TeaPot HA");
