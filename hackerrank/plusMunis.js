@@ -9,3 +9,26 @@
 
 // print each on their own line rounded to 6th place
 // arr is the array of intergers
+// n is number of elements in the array
+
+// Complete the plusMinus function below.
+function plusMinus(arr) {
+  let positives = 0;
+  let negatives = 0;
+  let zeros = 0;
+  let denom = 6;
+  // console.log(denom);
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      positives++;
+    } else if (arr[i] < 0) {
+      negatives++;
+    } else {
+      zeros++;
+    }
+  }
+  console.log(`Positives: ${positives}`);
+  console.log(`Negatives: ${negatives}`);
+  console.log(`Zeros: ${zeros}`);
+}
