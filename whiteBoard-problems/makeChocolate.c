@@ -14,7 +14,7 @@
 // func(1,2,7) => -1 >>> not enough small bars
 // func(7,2,7) => 2 small used, 1 big to === 7k
 
-#include <cs50.h>
+//#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
