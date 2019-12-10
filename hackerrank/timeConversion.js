@@ -10,7 +10,29 @@
 // 19:05:45
 
 function timeConversion(s) {
-  console.log(s);
+  // split from :
+  // then take the first element and subrtract by 24 to turn into Military time
+  // split last by PM or AM
+
+  let newTime = s.split(':');
+  console.log(newTime);
+
+  let hour = 0;
+  let min = 0;
+  let sec = 0;
+
+  for (var i = 0; i < newTime.length; i++) {
+    if (newTime > 12) {
+      hour = 12 + newTime[0];
+    } else {
+      hour = 12 + parseInt(newTime[0]); // convert 07 to int
+      console.log(hour);
+    }
+    min = newTime[1];
+    sec = newTime[2];
+  }
+
+  console.log(hour + ':' + min + ':' + sec);
 }
 
 timeConversion('07:05:45PM');
