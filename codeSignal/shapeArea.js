@@ -21,3 +21,18 @@
 
 // The area of the n - interesting polygon.
 // [JavaScript(ES6)] Syntax Tips
+
+function shapeArea(n) {
+  // difference of 4 on each n
+
+  var area = 1;
+
+  for (var i = 1; i < n; i++) {
+    area += 4 * i;
+  }
+
+  return area;
+}
+
+// Time: 18:16
+// Grade: 3
