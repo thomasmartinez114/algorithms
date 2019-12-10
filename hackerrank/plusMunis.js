@@ -31,4 +31,11 @@ function plusMinus(arr) {
   console.log(`Positives: ${positives}`);
   console.log(`Negatives: ${negatives}`);
   console.log(`Zeros: ${zeros}`);
+
+  let pFrac = positives / 6;
+  let nFrac = negatives / 6;
+  let zFrac = zeros / 6;
+  console.log(pFrac, nFrac, zFrac);
 }
+
+plusMinus([1, 2, 3, 0, -2, -4]);
