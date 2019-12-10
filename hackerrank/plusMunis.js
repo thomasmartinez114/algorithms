@@ -28,14 +28,19 @@ function plusMinus(arr) {
       zeros++;
     }
   }
-  console.log(`Positives: ${positives}`);
-  console.log(`Negatives: ${negatives}`);
-  console.log(`Zeros: ${zeros}`);
+  //   console.log(`Positives: ${positives}`);
+  //   console.log(`Negatives: ${negatives}`);
+  //   console.log(`Zeros: ${zeros}`);
 
-  let pFrac = positives / 6;
-  let nFrac = negatives / 6;
-  let zFrac = zeros / 6;
-  console.log(pFrac, nFrac, zFrac);
+  let totalNumbs = positives + negatives + zeros;
+  let pFrac = positives / totalNumbs;
+  let nFrac = negatives / totalNumbs;
+  let zFrac = zeros / totalNumbs;
+
+  console.log(pFrac.toFixed(6));
+  console.log(nFrac.toFixed(6));
+  console.log(zFrac.toFixed(6));
 }
 
-plusMinus([1, 2, 3, 0, -2, -4]);
+// Time: 38:37
+// Grade: 5
