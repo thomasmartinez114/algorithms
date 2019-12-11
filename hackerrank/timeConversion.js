@@ -25,14 +25,18 @@ function timeConversion(s) {
     if (newTime > 12) {
       hour = 12 + newTime[0];
     } else {
-      hour = 12 + parseInt(newTime[0]); // convert 07 to int
+      hour = 12 + parseFloat(newTime[0]); // convert 07 to int
       //   console.log(hour);
     }
     min = newTime[1];
-    sec = 
+    sec = newTime[2];
   }
 
   console.log(hour + ':' + min + ':' + sec);
+  return hour + ':' + min + ':' + sec;
 }
 
 timeConversion('07:05:45PM');
+
+// Time: 54:45
+// Grade: 5
