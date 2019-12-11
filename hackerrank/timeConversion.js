@@ -14,7 +14,7 @@ function timeConversion(s) {
   // then take the first element and subrtract by 24 to turn into Military time
   // split last by PM or AM
 
-  let newTime = s.split(':');
+  let newTime = s.slice(0, 8).split(':'); // sliced from [0] - [8] to not grab AMPM
   console.log(newTime);
 
   let hour = 0;
@@ -26,10 +26,10 @@ function timeConversion(s) {
       hour = 12 + newTime[0];
     } else {
       hour = 12 + parseInt(newTime[0]); // convert 07 to int
-      console.log(hour);
+      //   console.log(hour);
     }
     min = newTime[1];
-    sec = newTime[2];
+    sec = 
   }
 
   console.log(hour + ':' + min + ':' + sec);
