@@ -7,40 +7,25 @@
 // You can return the array with its elements in any order.
 
 function diffArray(arr1, arr2) {
-    var tempArray = [];
+  var tempArray = [];
 
-    for (var i = 0; i < arr1.length; i++){
-        if(arr2.indexOf(arr1[i]) === -1){
-            tempArray.push(arr1[i])
-        }
+  for (var i = 0; i < arr1.length; i++) {
+    if (arr2.indexOf(arr1[i]) === -1) {
+      tempArray.push(arr1[i]);
     }
+  }
 
-    for (var j = 0; j < arr2.length; j++){
-        if(arr1.indexOf(arr2[j]) === -1){
-            tempArray.push(arr2[j]);
-        }
+  for (var j = 0; j < arr2.length; j++) {
+    if (arr1.indexOf(arr2[j]) === -1) {
+      tempArray.push(arr2[j]);
     }
+  }
 
-    // for (var i = 0; i < arr1.length; i++){
-    //     // iterate through arr1
-    //     if(arr2[i].indexOf(arr1[i]) === -1){
-    //         // if arr2 doesn't have items in arr1
-    //         tempArray.push(arr1[i]);
-    //         // Add to tempArr
-    //     }
+  console.log(tempArray);
+  return tempArray;
+}
 
-    //     // test for arr2
-    //     for(var j = 0; j < arr2.length; j++){
-    //         if(arr1[j].indexOf(arr2[j]) === -1){
-    //             tempArray.push(arr2[i]);
-    //         }
-    //     }
-        
-        console.log(tempArray);
-        return tempArray;
-    }
-
-    // Time: 29:09
-    // Grade: 2
+// Time: 29:09
+// Grade: 2
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
