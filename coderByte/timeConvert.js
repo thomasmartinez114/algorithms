@@ -9,8 +9,10 @@
 
 function TimeConvert(num) {
   // code goes here
-  return num;
+  var hours = num / 60;
+  console.log(hours);
 }
 
 // keep this function call here
-console.log(TimeConvert(readline()));
+// console.log(TimeConvert(readline()));
+console.log(TimeConvert(126));
