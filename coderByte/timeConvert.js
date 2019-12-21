@@ -9,8 +9,12 @@
 
 function TimeConvert(num) {
   // code goes here
-  var hours = num / 60;
+  let hours = num / 60;
   console.log(hours);
+  let minutes = num % 60; // 126 % 60 = 6 (60 goes into 120 twice and the remainder is 6)
+  console.log(minutes);
+  let total = hours + ':' + minutes;
+  console.log(total);
 }
 
 // keep this function call here
