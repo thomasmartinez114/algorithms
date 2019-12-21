@@ -9,14 +9,14 @@
 
 function TimeConvert(num) {
   // code goes here
-  let hours = num / 60;
+  let hours = Math.round(num / 60);
   console.log(hours);
   let minutes = num % 60; // 126 % 60 = 6 (60 goes into 120 twice and the remainder is 6)
-  console.log(minutes);
+  // console.log(minutes);
   let total = hours + ':' + minutes;
   console.log(total);
 }
 
 // keep this function call here
-// console.log(TimeConvert(readline()));
-console.log(TimeConvert(126));
+console.log(TimeConvert(readline()));
+// console.log(TimeConvert(45));
